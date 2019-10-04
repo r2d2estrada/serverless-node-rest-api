@@ -35,7 +35,7 @@ module.exports.update = (event, context, callback) => {
     dynamoDb.update(params, (err, data) => {
         if (err) {
             console.error(err);
-            return callback(new Error('Unable to create new item'));
+            return callback(new Error('Unable to update item'));
         } else {
             callback(null, {
                 statusCode: 200,

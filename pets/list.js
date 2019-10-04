@@ -13,7 +13,7 @@ module.exports.delete = (event, context, callback) => {
     dynamoDb.scan(params, (err, data) => {
         if (err) {
             console.error(err);
-            return callback(new Error('Fetch Items'));
+            return callback(new Error('Unable to fetch Items'));
         } else {
             callback(null, {
                 statusCode: 200,

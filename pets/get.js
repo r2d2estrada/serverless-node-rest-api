@@ -16,7 +16,7 @@ module.exports.delete = (event, context, callback) => {
     dynamoDb.get(params, (err, data) => {
         if (err) {
             console.error(err);
-            return callback(new Error('Unable to remove  item'));
+            return callback(new Error('Unable to fetch item'));
         } else {
             callback(null, {
                 statusCode: 200,
