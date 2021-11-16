@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/r2d2estrada/serverless-node-rest-api#readme",
   "dependencies": {
-    "aws-sdk": "^2.543.0",
+    "aws-sdk": "^2.814.0",
     "uuid": "^3.3.3"
   }
 }
